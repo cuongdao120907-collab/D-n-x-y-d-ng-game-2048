@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #faf8ef;
+    margin-top: 40px;
+}
+
+h1 {
+    font-size: 50px;
+    color: #776e65;
+    margin-bottom: 20px;
+}
+
+/* Lưới nền 4x4 */
+.grid {
+    width: 460px;
+    height: 460px;
+    margin: 0 auto;
+    background: #bbada0;
+    padding: 10px;
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Ô nền */
+.cell {
+    background: #cdc1b4;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 32px;
+    font-weight: bold;
+    color: #776e65;
+}
+
+/* Màu từng giá trị */
+.value-0   { background: #cdc1b4; }
+.value-2   { background: #eee4da; }
+.value-4   { background: #ede0c8; }
+.value-8   { background: #f2b179; color: #f9f6f2; }
+.value-16  { background: #f59563; color: #f9f6f2; }
+.value-32  { background: #f67c5f; color: #f9f6f2; }
+.value-64  { background: #f65e3b; color: #f9f6f2; }
+.value-128 { background: #edcf72; color: #f9f6f2; font-size: 26px; }
+.value-256 { background: #edcc61; color: #f9f6f2; font-size: 26px; }
+.value-512 { background: #edc850; color: #f9f6f2; font-size: 26px; }
+.value-1024 { background: #edc53f; color: #f9f6f2; font-size: 22px; }
+.value-2048 { background: #edc22e; color: #f9f6f2; font-size: 22px; }
